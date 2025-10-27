@@ -8,3 +8,5 @@ motor
 aiohttp
 asyncio
 aiofiles
+
+python-telegram-bot==21.5
