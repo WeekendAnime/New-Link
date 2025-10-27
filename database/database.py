@@ -6,7 +6,6 @@ from typing import List, Optional
 
 logging.basicConfig(level=logging.INFO)
 
-
 class Master:
     def __init__(self, DB_URI, DB_NAME):
         self.dbclient = motor.motor_asyncio.AsyncIOMotorClient(DB_URI)
@@ -23,6 +22,11 @@ class Master:
         
         # Main collection reference (for backward compatibility)
         self.col = self.user_data
+
+
+# ✅ Add this part at the end:
+from config import DB_URI, DB_NAME
+botskingdom = Master(DB_URI, DB_NAME)
 
     def new_user(self, id, username=None):
         return dict(
