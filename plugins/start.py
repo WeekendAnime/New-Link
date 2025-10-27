@@ -59,7 +59,7 @@ async def is_sub(client, user_id, channel_id):
         return False
 
 async def is_subscribed(client, user_id):
-    channel_ids = await get_fsub_channels()
+    channel_ids = await botskingdom.get_fsub_channels()
     if not channel_ids:
         return True
     if user_id == OWNER_ID:
