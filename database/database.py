@@ -23,11 +23,7 @@ class Master:
         # Main collection reference (for backward compatibility)
         self.col = self.user_data
 
-
-# ✅ Add this part at the end:
-from config import DB_URI, DB_NAME
-botskingdom = Master(DB_URI, DB_NAME)
-
+    # ✅ Moved INSIDE the class (4 spaces)
     def new_user(self, id, username=None):
         return dict(
             _id=int(id),
@@ -54,6 +50,7 @@ botskingdom = Master(DB_URI, DB_NAME)
                 logging.error(f"Error adding user {u.id}: {e}")
         else:
             logging.info(f"User {u.id} already exists")
+
 
     async def is_user_exist(self, id):
         try:
@@ -493,3 +490,7 @@ botskingdom = Master(DB_URI, DB_NAME)
         except Exception as e:
             logging.error(f"Error fetching original link for channel {channel_id}: {e}")
             return None
+
+# ✅ This must be AFTER the class, no indentation
+from config import DB_URI, DB_NAME
+botskingdom = Master(DB_URI, DB_NAME)
