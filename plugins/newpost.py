@@ -7,7 +7,8 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, InputMediaPhoto
 from pyrogram.errors import UserNotParticipant, FloodWait, ChatAdminRequired, RPCError, PeerIdInvalid
 from pyrogram.errors import InviteHashExpired, InviteRequestSent
-from database.database import * 
+from database.database import *
+from database.database import botskingdom
 from config import *
 from helper_func import *
 from pyrogram.enums import ParseMode, ChatMemberStatus
