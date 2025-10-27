@@ -10,8 +10,8 @@ APP_ID = int(os.environ.get("APP_ID", "28744454"))
 API_HASH = os.environ.get("API_HASH", "debd37cef0ad1a1ce45d0be8e8c3c5e7")
 OWNER_ID = int(os.environ.get("OWNER_ID", "6266529037"))
 PORT = os.environ.get("PORT", "8080")
-DB_URI = os.environ.get("DB_URI", "")
-DB_NAME = os.environ.get("DB_NAME", "")
+DB_URI = os.environ.get("DB_URI", "mongodb+srv://laespadaxxxx:laespadaxxxx@cluster0.bgxp4ab.mongodb.net/?appName=Cluster0")
+DB_NAME = os.environ.get("DB_NAME", "AnimeWeekendsLinks")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "40"))
 STICKER_ID = os.environ.get("STICKER_ID", "CAACAgUAAxkBAAEPQLRorzC7PcWDMNuR6UkaxaKLxtsY-gACERUAApg9qVU2Cwv5mdxKhDYE")  # Replace with your sticker ID
 COMMAND_PHOTO = os.environ.get("COMMAND_PHOTO", "https://ibb.co/mVkSySr7")  # Replace with your photo URL
@@ -22,7 +22,7 @@ HELP_TXT =  os.environ.get("HELP_MESSAGE", "⁉️ Hᴇʟʟᴏ {mention} ~\n\n <
 BOT_STATS_TEXT = "<i><b><blockquote>ʙᴏᴛ ᴜᴘᴛɪᴍᴇ\n{uptime}</blockquote></b></i>"
 USER_REPLY_TEXT = "<i><b><blockquote>⚠️ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ᴍᴀsᴛᴇʀ.</blockquote></b></i>"
 LOG_FILE_NAME = "links-sharingbot.txt"
-DATABASE_CHANNEL = int(os.environ.get("DATABASE_CHANNEL", "-1002257657458"))
+DATABASE_CHANNEL = int(os.environ.get("DATABASE_CHANNEL", "-1002624286889"))
 
 logging.basicConfig(
     level=logging.INFO,
