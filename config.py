@@ -4,11 +4,11 @@ from os import environ
 import logging
 from logging.handlers import RotatingFileHandler
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7520539725:AAFyWVPB5H0VbVggbvAjjn2NgCl_eJ68RQc")
 BOT_USERNAME = 'LinkkShare_bot'
-APP_ID = int(os.environ.get("APP_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "28744454"))
+API_HASH = os.environ.get("API_HASH", "debd37cef0ad1a1ce45d0be8e8c3c5e7")
+OWNER_ID = int(os.environ.get("OWNER_ID", "6266529037"))
 PORT = os.environ.get("PORT", "8080")
 DB_URI = os.environ.get("DB_URI", "")
 DB_NAME = os.environ.get("DB_NAME", "")
