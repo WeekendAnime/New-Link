@@ -50,7 +50,7 @@ async def settings_callback(client: Bot, callback_query):
     print(f"Callback received: {cb_data} from user {user_id}")
 
     try:
-        is_admin_user = await codeflixbots.is_admin(user_id)
+        is_admin_user = await Bot.is_admin(user_id)
 
         # Main Settings Menu
         if cb_data == "settings_main":
